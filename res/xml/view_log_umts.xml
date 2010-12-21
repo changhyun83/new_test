@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LGE_WCDMA_FEATURE_MERGE  START -->
+<!-- LGE_ENGINEERING_INFO START-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+ 
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+        
+    <RelativeLayout android:id="@+id/editors"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+                
+        <!-- Serving PLMN info -->
+        <TextView
+            android:id="@+id/label_1" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:text="@string/label1_name"
+        />
+        
+        <!-- MCC value -->
+        <TextView 
+            android:id="@+id/mcc_label"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dip"
+            android:layout_below="@+id/label_1"
+            android:text="@string/mcc_label_name"
+        />
+        <TextView 
+            android:id="@+id/mcc_value"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dip"
+            android:layout_below="@+id/label_1"
+            android:layout_marginLeft="45dip"
+        />
+        
+        <!-- MNC value -->
+        <TextView 
+            android:id="@+id/mnc_label"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mcc_label"
+            android:text="@string/mnc_label_name"
+        />
+        <TextView 
+            android:id="@+id/mnc_value"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mcc_label"
+            android:layout_marginLeft="45dip"
+        />
+        
+        <!-- LAC value -->
+        <TextView 
+            android:id="@+id/lac_label"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mnc_label"
+            android:text="@string/lac_label_name"
+        />
+        <TextView 
+            android:id="@+id/lac_value"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mnc_label"
+            android:layout_marginLeft="45dip"
+            android:text="@string/def_text"
+        />
+        
+        <!-- RAC value -->
+        <TextView 
+            android:id="@+id/rac_label"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lac_label"
+            android:text="@string/rac_label_name"
+        />
+        <TextView 
+            android:id="@+id/rac_value"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lac_label"
+            android:layout_marginLeft="45dip"
+            android:text="@string/def_text"
+        />
+        
+        <!-- Neighbors cell info -->
+        <TextView 
+            android:id="@+id/label_2" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dip"
+            android:layout_below="@+id/rac_label"
+            android:text="@string/label2_name"
+        />
+      
+        <!-- Cell parameter -->
+        <TextView 
+            android:id="@+id/cell_label" 
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/cell_label_name"
+        />
+        <TextView 
+            android:id="@+id/cell_value" 
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/cell_label"
+            android:text="@string/def_text"
+        />
+        <!-- SC parameter -->
+        <TextView 
+            android:id="@+id/sc_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/sc_label_name"
+        />
+        <TextView 
+            android:id="@+id/sc_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="40dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/sc_label"
+            android:text="@string/def_text"
+        />
+ 
+        <!-- RSCP parameter -->
+        <TextView 
+            android:id="@+id/rscp_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="80dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/rscp_label_name"
+        />
+        <TextView 
+            android:id="@+id/rscp_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="80dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rscp_label"
+            android:text="@string/def_text"
+        />
+        <!-- ECN0 parameter -->
+        <TextView 
+            android:id="@+id/ecno_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="135dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/ecno_label_name"
+        />
+        <TextView 
+            android:id="@+id/ecno_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="135dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ecno_label"
+            android:text="@string/def_text"
+        />
+
+        <!-- DLF parameter -->
+        <TextView 
+            android:id="@+id/dlf_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="185dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/dlf_label_name"
+        />
+        <TextView 
+            android:id="@+id/dlf_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="185dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/dlf_label"
+            android:text="@string/def_text"
+        />
+        <!-- RV parameter -->
+        <TextView 
+            android:id="@+id/rv_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="240dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/rv_label_name"
+        />
+        <TextView 
+            android:id="@+id/rv_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="240dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rv_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- RS parameter -->
+        <TextView 
+            android:id="@+id/rs_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="285dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/rs_label_name"
+        />
+        <TextView 
+            android:id="@+id/rs_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="285dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rs_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- B parameter -->
+        <TextView 
+            android:id="@+id/b_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="325dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/b_label_name"
+        />
+        <TextView 
+            android:id="@+id/b_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="325dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/b_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- Arfcn parameter -->
+        <TextView 
+            android:id="@+id/arfcn_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="365dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/arfcn_label_name"
+        />
+        <TextView 
+            android:id="@+id/arfcn_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="365dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/arfcn_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- Rssi parameter -->
+        <TextView 
+            android:id="@+id/rssi_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="405dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/rssi_label_name"
+        />
+        <TextView 
+            android:id="@+id/rssi_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="405dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rssi_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- Bsic parameter -->
+        <TextView 
+            android:id="@+id/bsic_label" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="445dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/label_2"
+            android:text="@string/bsic_label_name"
+        />
+        <TextView 
+            android:id="@+id/bsic_value" 
+            android:layout_width="40dip"
+            android:layout_marginLeft="445dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/bsic_label"
+            android:text="@string/def_text"
+        />
+
+
+     </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- LGE_ENGINEERING_INFO END -->
+<!-- LGE_WCDMA_FEATURE_MERGE  END -->

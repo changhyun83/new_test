@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LGE_WCDMA_FEATURE_MERGE  START -->
+<!-- LGE_ENGINEERING_INFO START-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+        android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+   <LinearLayout
+        android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+ <ScrollView android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+       <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+      <TextView android:id="@+id/gsmModule"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dip"
+          android:textSize="28sp"
+          android:textStyle="normal"
+          android:textColor="#FFF"
+          />
+          
+      <TextView android:id="@+id/umtsModule"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dip"
+          android:textSize="28sp"
+          android:textStyle="normal"
+          android:textColor="#FFF"
+          />
+          
+      <TextView android:id="@+id/mmModule"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dip"
+          android:textSize="28sp"
+          android:textStyle="normal"
+          android:textColor="#FFF"
+          />
+          
+    </LinearLayout>
+ </ScrollView>    
+</LinearLayout>
+<!-- LGE_ENGINEERING_INFO END-->
+<!-- LGE_WCDMA_FEATURE_MERGE  END -->

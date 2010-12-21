@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LGE_WCDMA_FEATURE_MERGE  START -->
+<!-- LGE_ENGINEERING_INFO START-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+   <Button
+        android:layout_weight="1" 
+        android:id="@+id/btn2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+ 
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+        
+    <RelativeLayout android:id="@+id/editors"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+                
+        <!-- Process parameter -->
+        <TextView
+            android:id="@+id/process_label" 
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:text="@string/process_label_name"
+        />
+        <TextView 
+            android:id="@+id/process_value"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="60dip"
+            android:text="@string/def_text"
+        />
+     
+        <!-- MMs parameter -->
+        <TextView
+            android:id="@+id/mms_label" 
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/process_label"
+            android:text="@string/mms_label_name"
+        />
+        <TextView 
+            android:id="@+id/mms_value"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dip"
+            android:layout_below="@+id/process_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- MMSs parameter -->
+        <TextView
+            android:id="@+id/mmss_label" 
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mms_label"
+            android:text="@string/mmss_label_name"
+        />
+        <TextView 
+            android:id="@+id/mmss_value"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dip"
+            android:layout_below="@+id/mms_label"
+            android:text="@string/def_text"
+        />
+        
+        <!-- MSC parameter -->
+        <TextView
+            android:id="@+id/msc_label" 
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/mmss_label"
+            android:text="@string/msc_label_name"
+        />
+        <TextView 
+            android:id="@+id/msc_value"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dip"
+            android:layout_below="@+id/mmss_label"
+            android:text="@string/def_text"
+        />      
+        
+        <!-- T parameter -->
+        <TextView
+            android:id="@+id/t_label" 
+            android:layout_width="55dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/msc_label"
+            android:text="@string/t_label_name"
+        />
+        <TextView 
+            android:id="@+id/t_value"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dip"
+            android:layout_below="@+id/msc_label"
+            android:text="@string/def_text"
+        />   
+
+     </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- LGE_ENGINEERING_INFO END-->
+<!-- LGE_WCDMA_FEATURE_MERGE  END -->

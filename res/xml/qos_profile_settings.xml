@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LGE_WCDMA_FEATURE_MERGE  START -->
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        android:title="@string/prefs_title">
+           <EditTextPreference android:key="name"
+             android:title="@string/qosp_name_title"  
+             android:defaultValue="default"/>        
+           <EditTextPreference android:key="traffic_class"
+             android:title="@string/traffic_class_title"  
+             android:defaultValue="-1"/>        
+              <EditTextPreference android:key="maximum_bitrate_ul"
+             android:title="@string/maximum_bitrate_ul_title"  
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="maximum_bitrate_dl"
+             android:title="@string/maximum_bitrate_dl_title"  
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="guaranteed_bitrate_ul"
+             android:title="@string/guaranteed_bitrate_ul_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="guaranteed_bitrate_dl"
+             android:title="@string/guaranteed_bitrate_dl_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="delivery_order"
+             android:title="@string/delivery_order_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="maximum_sdu_size"
+             android:title="@string/maximum_sdu_size_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="sdu_error_ratio"
+             android:title="@string/sdu_error_ratio_title"
+             android:defaultValue=""/>
+              <EditTextPreference android:key="residual_bit_error_ratio"
+             android:title="@string/residual_bit_error_ratio_title"
+             android:defaultValue=""/>
+              <EditTextPreference android:key="delivery_of_erroneous_sdus"
+             android:title="@string/delivery_of_erroneous_sdus_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="transfer_delay"
+             android:title="@string/transfer_delay_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="traffic_handling_priority"
+             android:title="@string/traffic_handling_priority_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="source_statistics_descriptor"
+             android:title="@string/source_statistics_descriptor_title"
+             android:defaultValue="-1"/>
+              <EditTextPreference android:key="signalling_indication"
+             android:title="@string/signalling_indication_title"
+             android:defaultValue="-1"/>       
+</PreferenceScreen>
+<!-- LGE_WCDMA_FEATURE_MERGE  END -->
